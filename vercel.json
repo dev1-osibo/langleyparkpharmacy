@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "env": {
+    "VITE_GOOGLE_ANALYTICS_ID": "@google_analytics_id",
+    "VITE_SENDGRID_API_KEY": "@sendgrid_api_key",
+    "VITE_CALENDLY_URL": "@calendly_url"
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
