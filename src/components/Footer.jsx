@@ -32,7 +32,7 @@ export default function Footer() {
             <ul className="text-gray-300 text-sm space-y-2">
               <li>📍 8004 New Hampshire Ave, Takoma Park, MD 20912</li>
               <li>📞 <a href="tel:+13016191234" className="hover:text-secondary">301-619-1234</a></li>
-              <li>📧 <a href="mailto:info@langleyparkpharmacy.com" className="hover:text-secondary">info@langleyparkpharmacy.com</a></li>
+              <li>📧 <a href="mailto:pharmacist@langleyparkpharmacy.com" className="hover:text-secondary">pharmacist@langleyparkpharmacy.com</a></li>
             </ul>
           </div>
 

@@ -57,8 +57,8 @@ export default function Contact() {
 
               <div>
                 <h3 className="text-2xl font-bold text-primary mb-4">📧 Email</h3>
-                <a href="mailto:info@langleyparkpharmacy.com" className="text-lg text-secondary font-bold hover:text-primary">
-                  info@langleyparkpharmacy.com
+                <a href="mailto:pharmacist@langleyparkpharmacy.com" className="text-lg text-secondary font-bold hover:text-primary">
+                  pharmacist@langleyparkpharmacy.com
                 </a>
               </div>
             </div>
