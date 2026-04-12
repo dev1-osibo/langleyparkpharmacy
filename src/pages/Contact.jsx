@@ -50,12 +50,9 @@ export default function Contact() {
 
               <div>
                 <h3 className="text-2xl font-bold text-primary mb-4">⏰ Hours</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li><strong>Monday - Friday:</strong> 9:00 AM - 7:00 PM</li>
-                  <li><strong>Saturday:</strong> 9:00 AM - 5:00 PM</li>
-                  <li><strong>Sunday:</strong> 11:00 AM - 4:00 PM</li>
-                  <li className="pt-2 text-warning font-semibold">Closed on major holidays</li>
-                </ul>
+                <p className="text-gray-700">
+                  We're open Monday-Friday 9 AM-7 PM, Saturday 10 AM-3 PM, and closed on Sunday and major holidays.
+                </p>
               </div>
 
               <div>

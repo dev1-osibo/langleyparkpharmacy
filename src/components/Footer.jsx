@@ -39,12 +39,9 @@ export default function Footer() {
           {/* Hours */}
           <div>
             <h5 className="font-bold mb-4 text-secondary">Hours</h5>
-            <ul className="text-gray-300 text-sm space-y-1">
-              <li>Mon-Fri: 9:00 AM - 7:00 PM</li>
-              <li>Saturday: 9:00 AM - 5:00 PM</li>
-              <li>Sunday: 11:00 AM - 4:00 PM</li>
-              <li className="pt-2 text-warning">Closed on holidays</li>
-            </ul>
+            <p className="text-gray-300 text-sm">
+              We're open Monday-Friday 9 AM-7 PM, Saturday 10 AM-3 PM, and closed on Sunday and major holidays.
+            </p>
           </div>
         </div>
 

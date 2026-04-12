@@ -8,7 +8,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'What are your hours of operation?',
-      answer: 'We\'re open Monday-Friday 9 AM-7 PM, Saturday 9 AM-5 PM, and Sunday 11 AM-4 PM. We\'re closed on major holidays.'
+      answer: 'We\'re open Monday-Friday 9 AM-7 PM, Saturday 10 AM-3 PM, and closed on Sunday and major holidays.'
     },
     {
       question: 'Do you accept insurance?',

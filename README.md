@@ -118,7 +118,7 @@ langleyparkpharmacy/
 info@langleyparkpharmacy.com
 
 // Hours (in Footer & Contact pages)
-Mon-Fri: 9:00 AM - 7:00 PM
+We're open Monday-Friday 9 AM-7 PM, Saturday 10 AM-3 PM, and closed on Sunday and major holidays.
 ```
 
 ### Update Colors & Branding

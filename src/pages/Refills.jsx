@@ -47,8 +47,8 @@ export default function Refills() {
                   </div>
                   <div>
                     <strong>📧 Email:</strong><br />
-                    <a href="mailto:refills@langleyparkpharmacy.com" className="text-secondary hover:text-primary font-bold">
-                      refills@langleyparkpharmacy.com
+                    <a href="mailto:pharmacist@langleyparkpharmacy.com" className="text-secondary hover:text-primary font-bold">
+                      pharmacist@langleyparkpharmacy.com
                     </a>
                   </div>
                   <div>
