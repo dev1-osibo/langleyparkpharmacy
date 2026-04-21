@@ -7,8 +7,8 @@ export default function Home() {
     {
       icon: '💊',
       title: 'Prescription Refills',
-      description: 'Easy, fast prescription refills with delivery options available.',
-      link: '/refills'
+      description: 'Easy, fast prescription refills. Call us to place an order.',
+      link: '/services'
     },
     {
       icon: '🛍️',
@@ -20,7 +20,7 @@ export default function Home() {
       icon: '👨‍⚕️',
       title: 'Consultations',
       description: 'Expert advice from our licensed pharmacists.',
-      link: '/appointments'
+      link: '/services'
     },
     {
       icon: '💉',
@@ -60,9 +60,9 @@ export default function Home() {
             Serving Takoma Park with quality medications and expert care since our founding.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Link to="/appointments" className="btn-secondary text-lg">
-              Book an Appointment
-            </Link>
+            <a href="tel:+13016191234" className="btn-secondary text-lg">
+              Call Us Now
+            </a>
             <Link to="/services" className="btn-outline text-white border-white hover:bg-white hover:text-primary text-lg">
               Learn About Services
             </Link>
