@@ -20,17 +20,15 @@ export default function Navbar() {
             <Link to="/" className="hover:text-secondary transition">Home</Link>
             <Link to="/services" className="hover:text-secondary transition">Services</Link>
             <Link to="/about" className="hover:text-secondary transition">About</Link>
-            <Link to="/appointments" className="hover:text-secondary transition">Appointments</Link>
-            <Link to="/refills" className="hover:text-secondary transition">Refills</Link>
             <Link to="/faq" className="hover:text-secondary transition">FAQ</Link>
             <Link to="/blog" className="hover:text-secondary transition">Blog</Link>
             <Link to="/contact" className="hover:text-secondary transition">Contact</Link>
           </div>
 
           {/* CTA Button (Desktop) */}
-          <Link to="/appointments" className="hidden md:block btn-secondary">
-            Book Now
-          </Link>
+          <a href="tel:+13016191234" className="hidden md:block btn-secondary">
+            Call Now
+          </a>
 
           {/* Hamburger Menu */}
           <button
@@ -49,12 +47,10 @@ export default function Navbar() {
             <Link to="/" className="hover:text-secondary transition" onClick={() => setIsOpen(false)}>Home</Link>
             <Link to="/services" className="hover:text-secondary transition" onClick={() => setIsOpen(false)}>Services</Link>
             <Link to="/about" className="hover:text-secondary transition" onClick={() => setIsOpen(false)}>About</Link>
-            <Link to="/appointments" className="hover:text-secondary transition" onClick={() => setIsOpen(false)}>Appointments</Link>
-            <Link to="/refills" className="hover:text-secondary transition" onClick={() => setIsOpen(false)}>Refills</Link>
             <Link to="/faq" className="hover:text-secondary transition" onClick={() => setIsOpen(false)}>FAQ</Link>
             <Link to="/blog" className="hover:text-secondary transition" onClick={() => setIsOpen(false)}>Blog</Link>
             <Link to="/contact" className="hover:text-secondary transition" onClick={() => setIsOpen(false)}>Contact</Link>
-            <Link to="/appointments" className="btn-secondary text-center" onClick={() => setIsOpen(false)}>Book Now</Link>
+            <a href="tel:+13016191234" className="btn-secondary text-center">Call Now</a>
           </div>
         )}
       </div>

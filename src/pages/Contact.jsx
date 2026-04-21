@@ -1,5 +1,3 @@
-import ContactForm from '../components/ContactForm'
-
 export default function Contact() {
   return (
     <div>
@@ -16,15 +14,7 @@ export default function Contact() {
       {/* Main Content */}
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div>
-              <h2 className="text-primary text-3xl font-bold mb-8">Send Us a Message</h2>
-              <ContactForm />
-            </div>
-
-            {/* Contact Info */}
-            <div className="space-y-8">
+          <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold text-primary mb-4">📍 Address</h3>
                 <p className="text-gray-700 text-lg mb-4">
@@ -61,7 +51,6 @@ export default function Contact() {
                   pharmacist@langleyparkpharmacy.com
                 </a>
               </div>
-            </div>
           </div>
         </div>
       </section>
