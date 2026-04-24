@@ -1,401 +1,241 @@
-# Langley Park Pharmacy Website
+# Langley Park Pharmacy & Medical Supplies - Website
 
-A professional, fully-featured React website for Langley Park Pharmacy built with Vite, Tailwind CSS, and deployed on Vercel.
+## 📋 Project Overview
 
-## 📋 Table of Contents
+A professional, clean, and modern website for Langley Park Pharmacy located in Takoma Park, Maryland. The site is built with responsive design, featuring a green and blue color scheme that matches the pharmacy's branding.
 
-- [Quick Start](#quick-start)
-- [Project Structure](#project-structure)
-- [Features](#features)
-- [Customization Guide](#customization-guide)
-- [Deployment](#deployment)
-- [Managing Content](#managing-content)
-- [Forms & Email Integration](#forms--email-integration)
-- [Troubleshooting](#troubleshooting)
+## 🎨 Design Features
 
-## 🚀 Quick Start
+### Color Scheme
+- **Primary Green:** #4CAF50 (healing, growth, trust)
+- **Dark Blue:** #1E3A5F (professional, authority)
+- **Light Gray:** #F5F5F5 (clean, modern)
+- **White:** Clean backgrounds
+- **Accents:** Light green (#81C784) for hovers and highlights
 
-### Prerequisites
-- Node.js 16+ 
-- npm or yarn
+### Design Principles
+✓ Clean and modern aesthetic  
+✓ Fully responsive (mobile, tablet, desktop)  
+✓ Fast loading times  
+✓ User-friendly navigation  
+✓ Professional pharmacy/medical branding  
+✓ WhatsApp integration for customer engagement  
 
-### Installation
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-```
-
-The site will be available at `http://localhost:3000`
-
-## 📁 Project Structure
+## 📁 File Structure
 
 ```
 langleyparkpharmacy/
-├── public/
-│   ├── images/              # Images (add your photos here)
-│   └── favicon.ico
-├── src/
-│   ├── components/          # Reusable components
-│   │   ├── Navbar.jsx
-│   │   ├── Footer.jsx
-│   │   ├── ServiceCard.jsx
-│   │   ├── TestimonialCard.jsx
-│   │   ├── BlogCard.jsx
-│   │   ├── ContactForm.jsx
-│   │   ├── AppointmentForm.jsx
-│   │   ├── RefillForm.jsx
-│   │   └── FAQAccordion.jsx
-│   ├── pages/               # Page components
-│   │   ├── Home.jsx
-│   │   ├── Services.jsx
-│   │   ├── About.jsx
-│   │   ├── Contact.jsx
-│   │   ├── Appointments.jsx
-│   │   ├── Refills.jsx
-│   │   ├── FAQ.jsx
-│   │   ├── Blog.jsx
-│   │   └── BlogPost.jsx
-│   ├── blog/                # Blog posts (Markdown)
-│   │   ├── post-1.md
-│   │   ├── post-2.md
-│   │   └── post-3.md
-│   ├── styles/
-│   │   └── globals.css      # Global styles + Tailwind
-│   ├── App.jsx              # Main app component
-│   └── main.jsx             # Entry point
-├── package.json
-├── vite.config.js
-├── tailwind.config.js
-├── vercel.json              # Vercel deployment config
-├── .env.local.example       # Environment variables template
-├── .gitignore
-└── README.md
+├── index.html          # Main website markup
+├── styles.css          # Complete responsive styling
+├── script.js           # Interactive features and smooth scrolling
+├── README.md           # This file
+└── assets/
+    ├── logo.png        # Main pharmacy logo
+    ├── logo-favicon.png # Favicon for browser tab
+    ├── pharmacist-assisting-customer.png
+    ├── pharmacy-work-clinical.png
+    ├── calm-vaccination.png
+    ├── colorful-pharmacy-aisle.png
+    ├── pharmacy-consultation.png
+    ├── focused-scheduling.png
+    ├── pharmacy-team-portrait.png
+    ├── pharmacy-interior.png
+    └── clean-organized-pharmacy.png
 ```
 
-## ✨ Features
+## 🌐 Website Sections
 
-- ✅ **Responsive Design** - Mobile-first, works on all devices
-- ✅ **Fast Performance** - Vite + Tailwind CSS for speed
-- ✅ **Pages Built**:
-  - Home page with hero, services, testimonials
-  - Services detail page
-  - About page with team section
-  - Contact page with Google Maps
-  - Appointments booking form
-  - Prescription refill form
-  - FAQ with search
-  - Blog system with Markdown support
-- ✅ **Forms with Email** - Contact, appointments, refills (ready for SendGrid)
-- ✅ **Google Analytics** - Tracking setup included
-- ✅ **Calendly Integration** - Ready for booking widget
-- ✅ **Dark Mode Ready** - Tailwind classes included
-- ✅ **SEO Optimized** - Meta tags in place
+### 1. **Header & Navigation**
+- Sticky header with logo
+- Quick navigation links (Services, Book Appointment, About, Contact)
+- CTA buttons (WhatsApp, Call)
 
-## 🛠️ Customization Guide
+### 2. **Hero Section**
+- Full-width banner image with overlay
+- Main value proposition
+- Dual CTA buttons (Book Appointment, Refill Prescription)
 
-### Change Business Information
+### 3. **Services Section**
+- 4 service cards with images
+  - Prescription Refills
+  - Vaccinations
+  - Medical Supplies & OTC Products
+  - Consultations
+- Each card links to WhatsApp for immediate action
 
-**File:** Edit anywhere in components/pages:
+### 4. **Booking Section**
+- Appointment scheduling information
+- Available hours and contact details
+- WhatsApp booking CTA
 
-```javascript
-// Phone number (used in multiple places)
-<a href="tel:+13016191234">301-619-1234</a>
+### 5. **About Us Section**
+- Team portrait
+- Trust badges (Licensed Pharmacists, Expert Consultations, etc.)
+- Community-focused messaging
 
-// Address
-8004 New Hampshire Ave, Takoma Park, MD 20912
+### 6. **Store Showcase**
+- Modern pharmacy interior image
+- Hours, phone, address
+- Physical location information
 
-// Email
-info@langleyparkpharmacy.com
+### 7. **Contact Section**
+- 3 contact methods (WhatsApp, Phone, Visit)
+- Direct action buttons
 
-// Hours (in Footer & Contact pages)
-We're open Monday-Friday 9 AM-7 PM, Saturday 10 AM-3 PM, and closed on Sunday and major holidays.
-```
+### 8. **Footer**
+- Quick links
+- Store information
+- Contact details
+- Copyright notice
 
-### Update Colors & Branding
+## 📱 Responsive Breakpoints
 
-**File:** `tailwind.config.js`
+- **Desktop:** 1200px+
+- **Tablet:** 768px - 1199px
+- **Mobile:** Below 768px
 
-```javascript
-colors: {
-  primary: '#2D5F7F',      // Main blue
-  secondary: '#E74C3C',    // Red accent
-  accent: '#3498DB',       // Light blue
-  light: '#ECF0F1',        // Light gray
-  dark: '#2C3E50',         // Dark gray
-  success: '#27AE60',      // Green
-  warning: '#F39C12',      // Orange
+## 🚀 Features
+
+### Interactive Elements
+- Smooth scrolling navigation
+- Hover animations on cards and buttons
+- Scroll-triggered animations
+- Mobile-optimized layouts
+
+### WhatsApp Integration
+All service CTAs link directly to WhatsApp messaging:
+- Prescription refills
+- Vaccination scheduling
+- Product inquiries
+- Pharmacist consultations
+- General appointments
+
+### Contact Information
+- **Phone:** (301) 856-5663
+- **WhatsApp:** +1 (301) 856-5663
+- **Address:** 8004 New Hampshire Ave, Takoma Park, MD 20912
+- **Hours:** 9 AM - 7 PM, Daily
+- **Appointment Slots:** 10am, 11am, 1pm, 2pm, 3pm, 4pm (Mon-Fri)
+
+## 🛠️ Technical Details
+
+### Technologies Used
+- HTML5
+- CSS3 (with CSS Grid, Flexbox, Media Queries)
+- Vanilla JavaScript
+- No dependencies required
+- No external frameworks
+
+### Performance
+- Optimized image sizes
+- Minimal CSS (13.7KB)
+- Lightweight JavaScript (2.3KB)
+- Fast page load times
+- SEO-friendly structure
+
+### Browser Compatibility
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers
+
+## 📝 Content Management
+
+### Updating Contact Information
+Edit the following in `index.html`:
+- Phone number: Search for `tel:+13018565663`
+- WhatsApp number: Search for `wa.me/13018565663`
+- Address: Search for `8004 New Hampshire Ave`
+- Hours: Search for `9:00 AM - 7:00 PM`
+
+### Changing Colors
+Edit CSS variables in `styles.css`:
+```css
+:root {
+    --primary-green: #4CAF50;
+    --dark-blue: #1E3A5F;
+    /* ... other colors ... */
 }
 ```
 
-### Add Your Logo
+### Replacing Images
+Place new images in the `assets/` folder and update the `src` attributes in `index.html`.
 
-1. Place image file in `public/images/`
-2. Update Navbar.jsx:
-```javascript
-<Link to="/" className="text-2xl font-bold">
-  <img src="/images/logo.png" alt="Logo" className="h-8" />
-</Link>
-```
+## 🔧 Deployment
 
-### Change Fonts
+### Local Testing
+1. Open `index.html` in a web browser
+2. Or use a simple HTTP server:
+   ```bash
+   python -m http.server 8000
+   # or
+   npx serve
+   ```
 
-**File:** `tailwind.config.js`
+### Web Hosting
+1. Upload all files to your web hosting provider
+2. Ensure `assets/` folder is included
+3. Keep file structure intact
+4. Test all links and WhatsApp integration
 
-```javascript
-fontFamily: {
-  sans: ['Your Font Name', 'sans-serif'],
-  serif: ['Your Serif Font', 'serif'],
-}
-```
+### Domain Setup
+- Point your domain to the hosting server
+- Ensure `index.html` is the default file
 
-### Update Team Members
+## 📞 WhatsApp Business Setup
 
-**File:** `src/pages/About.jsx`
+For full WhatsApp Business integration:
+1. Set up WhatsApp Business account
+2. Create bot/automation for:
+   - Prescription refills
+   - Appointment booking
+   - Product inquiries
+   - Pharmacist consultations
+3. Link bot number to website CTAs
 
-```javascript
-const team = [
-  { name: 'Your Name', role: 'Your Role', emoji: '👨‍⚕️' },
-  // Add more...
-]
-```
+## 🔍 SEO Optimization
 
-## 📝 Managing Content
+The website includes:
+- Proper semantic HTML structure
+- Meta tags for mobile optimization
+- Descriptive page title
+- Clear heading hierarchy
+- Alt text on images (to be added)
 
-### Adding Blog Posts
+### Recommended SEO Enhancements
+1. Add meta descriptions
+2. Add Open Graph tags for social sharing
+3. Create XML sitemap
+4. Set up Google Business profile
+5. Enable schema.org structured data
 
-1. Create new `.md` file in `src/blog/`
-   Example: `src/blog/post-4.md`
+## 📊 Analytics (Optional)
 
-2. Use Markdown format:
-```markdown
-# Your Post Title
+To track user behavior, add:
+- Google Analytics
+- Hotjar heatmaps
+- WhatsApp message tracking
+- Form submission analytics
 
-**Published:** Date
+## 🎯 Future Enhancements
 
-## Section Heading
+- [ ] Online product store integration
+- [ ] Patient portal login
+- [ ] Prescription refill form
+- [ ] Insurance acceptance details
+- [ ] Health tip blog
+- [ ] Testimonials/reviews section
+- [ ] Photo gallery
+- [ ] Video testimonials
+- [ ] Appointment calendar widget
 
-Your content here...
-```
+## 📄 License & Credits
 
-3. Add post metadata in `Blog.jsx`:
-```javascript
-const blogPosts = [
-  {
-    id: 'post-4',
-    title: 'Your Title',
-    date: 'April 15, 2024',
-    excerpt: 'Brief description...',
-    category: 'Category'
-  },
-  // ... other posts
-]
-```
-
-### Adding Images
-
-1. Place images in `public/images/`
-2. Reference in components:
-```javascript
-<img src="/images/your-image.jpg" alt="Description" />
-```
-
-### Adding Services
-
-Edit relevant pages:
-- `Home.jsx` - Featured services
-- `Services.jsx` - Detailed service listings
-- Add icons using emoji or SVG
-
-### Updating FAQ
-
-**File:** `src/pages/FAQ.jsx`
-
-```javascript
-const faqs = [
-  {
-    question: 'Your Question?',
-    answer: 'Your answer here.'
-  },
-  // Add more...
-]
-```
-
-## 📧 Forms & Email Integration
-
-### Contact Form
-**File:** `src/components/ContactForm.jsx`
-
-Currently logs to console. To enable emails:
-
-1. Set up SendGrid account
-2. Get API key: https://sendgrid.com
-3. Add to `.env.local`:
-```
-VITE_SENDGRID_API_KEY=your_api_key
-```
-
-4. Uncomment/implement email logic in ContactForm.jsx
-
-### Appointment Form
-**File:** `src/components/AppointmentForm.jsx`
-
-Same process as Contact Form. Customize service types in the dropdown.
-
-### Refill Form
-**File:** `src/components/RefillForm.jsx`
-
-Ready for integration. Connect to pharmacy system for:
-- Medication database lookup
-- Insurance verification
-- Prescription status checking
-
-## 📊 Analytics Setup
-
-**File:** `index.html`
-
-1. Get Google Analytics ID: https://analytics.google.com
-2. Replace `G-XXXXXXXXXX` in two places:
-   - HTML meta tag
-   - gtag config
-
-Example:
-```html
-<script src="https://www.googletagmanager.com/gtag/js?id=G-ABC123"></script>
-<script>
-  gtag('config', 'G-ABC123');
-</script>
-```
-
-3. Verify tracking in Google Analytics dashboard after deployment
-
-## 🚀 Deployment
-
-### Deploy on Vercel
-
-1. **Connect GitHub**
-   - Push code to GitHub: `dev1-osibo/langleyparkpharmacy`
-   - Go to https://vercel.com
-   - Import project from GitHub
-
-2. **Set Environment Variables**
-   - Go to Project Settings → Environment Variables
-   - Add:
-     ```
-     VITE_GOOGLE_ANALYTICS_ID = G-your-id
-     VITE_SENDGRID_API_KEY = SG-your-key
-     VITE_CALENDLY_URL = https://calendly.com/...
-     ```
-
-3. **Configure Domain**
-   - Go to Settings → Domains
-   - Add `langleyparkpharmacy.com`
-   - Update DNS records with Vercel's nameservers
-
-4. **Deploy**
-   - Every push to `main` branch auto-deploys
-   - Production URL: https://langleyparkpharmacy.com
-
-### Vercel Configuration
-**File:** `vercel.json` (already configured)
-
-No changes needed unless adding new environment variables.
-
-## 🔒 Security & Best Practices
-
-- ✅ Never commit `.env.local` (in .gitignore)
-- ✅ Use environment variables for API keys
-- ✅ All forms are client-side ready (backend integration needed for production)
-- ✅ HTTPS enforced on Vercel
-- ✅ Regular backups of content
-
-## 📱 Mobile Optimization
-
-Site is mobile-first responsive:
-- Hamburger menu on mobile
-- Touch-friendly buttons (48px minimum)
-- Optimized images
-- Fast load times (Vite)
-
-Test responsiveness:
-```bash
-npm run dev
-# Open DevTools → Toggle device toolbar (Ctrl+Shift+M)
-```
-
-## 🧪 Testing
-
-Manual testing checklist:
-
-- [ ] All pages load without errors
-- [ ] Mobile menu opens/closes
-- [ ] Forms submit (check console for data)
-- [ ] Links work
-- [ ] Images load
-- [ ] Google Maps embed works
-- [ ] Responsive layout at breakpoints (375px, 768px, 1024px)
-
-## 🐛 Troubleshooting
-
-### "npm install" fails
-```bash
-# Clear cache and retry
-npm cache clean --force
-npm install
-```
-
-### Dev server won't start
-```bash
-# Kill process on port 3000
-# Windows:
-netstat -ano | findstr :3000
-taskkill /PID <PID> /F
-
-# Then retry:
-npm run dev
-```
-
-### Build fails
-```bash
-# Remove node_modules and reinstall
-rm -rf node_modules package-lock.json
-npm install
-npm run build
-```
-
-### Styles not showing
-- Clear browser cache (Ctrl+Shift+Delete)
-- Restart dev server
-- Check `tailwind.config.js` content paths
-
-### Forms not submitting
-- Check browser console for errors
-- Verify form component event handlers
-- Test with sample data first
-
-## 📞 Support
-
-For questions about:
-- **Content Updates:** Edit markdown files, redeploy
-- **New Features:** Add components in `src/components/`
-- **Styling:** Update `tailwind.config.js` or `src/styles/globals.css`
-- **Deployment:** Check Vercel dashboard
-
-## 📄 License
-
-Built for Langley Park Pharmacy. All rights reserved.
+Langley Park Pharmacy & Medical Supplies © 2026  
+All rights reserved.
 
 ---
 
-**Last Updated:** April 2024
-
-For questions or updates, contact the development team.
+**Last Updated:** April 23, 2026  
+**Version:** 1.0

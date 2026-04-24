@@ -1,25 +1,274 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Langley Park Pharmacy - Your Trusted Community Pharmacy</title>
-    <meta name="description" content="Professional pharmacy services in Takoma Park, MD. We offer prescription refills, consultations, vaccines, and more." />
-    <meta name="keywords" content="pharmacy, prescriptions, medications, Takoma Park, consultations, vaccines" />
-    <meta name="theme-color" content="#2D5F7F" />
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langley Park Pharmacy & Medical Supplies</title>
+    <link rel="icon" type="image/png" href="./assets/logo-favicon.png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <img src="./assets/logo.png" alt="Langley Park Pharmacy" class="logo">
+            </div>
+            <nav class="nav">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#booking" class="nav-link">Book Appointment</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-cta">
+                <a href="https://wa.me/13018565663?text=Hi%20Langley%20Park%20Pharmacy" class="btn btn-primary" target="_blank">WhatsApp</a>
+                <a href="tel:+13018565663" class="btn btn-secondary">Call</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <img src="./assets/pharmacist-assisting-customer.png" alt="Pharmacist helping customer" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Your Trusted Community Pharmacy</h1>
+            <p>Professional care, quality medications, and personalized service</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-large btn-green">Book Appointment</a>
+                <a href="https://wa.me/13018565663?text=Hi%20I%20need%20help%20with%20my%20prescription" class="btn btn-large btn-blue">Refill Prescription</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Everything you need for your health and wellness</p>
+            
+            <div class="services-grid">
+                <!-- Service 1: Prescription Refills -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./assets/pharmacy-work-clinical.png" alt="Prescription refills">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">💊</div>
+                        <h3>Prescription Refills</h3>
+                        <p>Quick and convenient prescription refills with expert pharmacist consultation.</p>
+                        <a href="https://wa.me/13018565663?text=Hi%20I%20need%20to%20refill%20my%20prescription" class="btn btn-service" target="_blank">Refill Now</a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Vaccinations -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./assets/calm-vaccination.png" alt="Vaccinations">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">💉</div>
+                        <h3>Vaccinations</h3>
+                        <p>Professional vaccination services including flu shots and other immunizations.</p>
+                        <a href="https://wa.me/13018565663?text=Hi%20I%20would%20like%20to%20schedule%20a%20vaccination" class="btn btn-service" target="_blank">Schedule Vaccine</a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Medical Supplies & OTC -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./assets/colorful-pharmacy-aisle.png" alt="Medical supplies">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🛍️</div>
+                        <h3>Medical Supplies & OTC</h3>
+                        <p>Wide selection of over-the-counter products and medical supplies in stock.</p>
+                        <a href="https://wa.me/13018565663?text=Hi%20I%20am%20looking%20for%20medical%20supplies" class="btn btn-service" target="_blank">Browse Products</a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Consultations -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./assets/pharmacy-consultation.png" alt="Consultations">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">💬</div>
+                        <h3>Consultations</h3>
+                        <p>One-on-one consultations with our experienced pharmacists for your health questions.</p>
+                        <a href="https://wa.me/13018565663?text=Hi%20I%20would%20like%20to%20consult%20with%20a%20pharmacist" class="btn btn-service" target="_blank">Ask Pharmacist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPOINTMENT BOOKING SECTION -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-text">
+                    <h2>Book Your Appointment</h2>
+                    <p>Schedule a consultation, vaccination, or prescription refill at your convenience.</p>
+                    <div class="booking-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📅</span>
+                            <div>
+                                <strong>Available Hours</strong>
+                                <p>Monday - Friday: 10am, 11am, 1pm, 2pm, 3pm, 4pm</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">⏱️</span>
+                            <div>
+                                <strong>Quick Response</strong>
+                                <p>Get confirmations within minutes via WhatsApp</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📍</span>
+                            <div>
+                                <strong>Location</strong>
+                                <p>8004 New Hampshire Ave, Takoma Park, MD 20912</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/13018565663?text=Hi%20I%20would%20like%20to%20book%20an%20appointment" class="btn btn-large btn-green" target="_blank">Book via WhatsApp</a>
+                </div>
+                <div class="booking-image">
+                    <img src="./assets/focused-scheduling.png" alt="Appointment booking">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Langley Park Pharmacy</h2>
+            
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="./assets/pharmacy-team-portrait.png" alt="Our professional team">
+                </div>
+                <div class="about-content">
+                    <h3>Meet Our Professional Team</h3>
+                    <p>Langley Park Pharmacy is dedicated to providing compassionate, professional healthcare services to our community. Our experienced team of licensed pharmacists is committed to your health and wellness.</p>
+                    
+                    <div class="trust-badges">
+                        <div class="badge">
+                            <span class="badge-icon">✓</span>
+                            <span>Licensed Pharmacists</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-icon">✓</span>
+                            <span>Expert Consultations</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-icon">✓</span>
+                            <span>Quality Medications</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-icon">✓</span>
+                            <span>Community Trusted</span>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 20px;">Whether you need prescription refills, vaccinations, consultations, or medical supplies, we're here to serve you with professionalism and care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STORE SHOWCASE -->
+    <section class="store-showcase">
+        <div class="container">
+            <div class="showcase-grid">
+                <div class="showcase-content">
+                    <h2>Visit Our Modern Pharmacy</h2>
+                    <p>Our clean, welcoming space is designed to make your pharmacy experience comfortable and efficient.</p>
+                    <div class="store-info">
+                        <div class="info-item">
+                            <strong>Hours</strong>
+                            <p>9:00 AM - 7:00 PM, Daily</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Phone</strong>
+                            <p><a href="tel:+13018565663">(301) 856-5663</a></p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Address</strong>
+                            <p>8004 New Hampshire Ave<br>Takoma Park, MD 20912</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-image">
+                    <img src="./assets/pharmacy-interior.png" alt="Our modern pharmacy interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>WhatsApp</h3>
+                    <p>Chat with us for quick responses</p>
+                    <a href="https://wa.me/13018565663" class="btn btn-secondary" target="_blank">Message Us</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">☎️</div>
+                    <h3>Call Us</h3>
+                    <p>Speak to our team directly</p>
+                    <a href="tel:+13018565663" class="btn btn-secondary">(301) 856-5663</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Visit Us</h3>
+                    <p>Stop by our pharmacy</p>
+                    <a href="https://maps.google.com/?q=8004+New+Hampshire+Ave+Takoma+Park+MD+20912" class="btn btn-secondary" target="_blank">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="./assets/logo.png" alt="Langley Park Pharmacy" class="footer-logo">
+                    <p>Your trusted community pharmacy serving Takoma Park and surrounding areas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#booking">Book Appointment</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>8004 New Hampshire Ave<br>Takoma Park, MD 20912</p>
+                    <p><a href="tel:+13018565663">(301) 856-5663</a></p>
+                    <p><a href="https://wa.me/13018565663">WhatsApp</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Langley Park Pharmacy & Medical Supplies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
 </html>
