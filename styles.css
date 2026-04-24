@@ -139,7 +139,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 8px 20px;
 }
 
 .logo-section {
@@ -147,7 +147,7 @@ body {
 }
 
 .logo {
-    height: 120px;
+    height: 240px;
     width: auto;
 }
 
