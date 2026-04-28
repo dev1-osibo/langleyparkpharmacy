@@ -139,8 +139,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
-    gap: 20px;
+    padding: 8px 20px;
+    gap: 30px;
 }
 
 .logo-section {
@@ -148,13 +148,13 @@ body {
 }
 
 .logo {
-    height: 240px;
+    height: 100px;
     width: auto;
 }
 
 .nav {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     align-items: center;
     flex: 1;
     justify-content: center;
@@ -163,9 +163,10 @@ body {
 .nav-link {
     text-decoration: none;
     color: var(--text-dark);
-    font-weight: 500;
+    font-weight: 600;
     transition: var(--transition);
-    padding: 5px 10px;
+    padding: 8px 12px;
+    font-size: 16px;
 }
 
 .nav-link:hover {
@@ -175,13 +176,15 @@ body {
 
 .header-cta {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .header-cta .btn {
-    padding: 10px 16px;
-    font-size: 13px;
+    padding: 12px 22px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 /* ============================================
@@ -195,6 +198,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top: -4px;
 }
 
 .hero-image {
@@ -677,13 +681,22 @@ body {
     .header .container {
         flex-direction: column;
         gap: 15px;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        height: 80px;
     }
 
     .nav {
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
         width: 100%;
         text-align: center;
+    }
+
+    .nav-link {
+        font-size: 14px;
     }
 
     .header-cta {
